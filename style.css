@@ -88,6 +88,7 @@ form input[type="email"]{ /* ------- input do email--------*/
     height: 50px;
     border: 1px solid #ccc;
     border-radius:10px;
+    color: black;
 }
 form input[type="email"]:focus{ /*-------efeito de tirar linha ao clicar----------*/
     outline: none;
@@ -98,7 +99,7 @@ form input[type="password"] {
     height: 50px;
     border: 1px solid #ccc;
     border-radius:10px 0px 0px 0px;
-    color: rgb(41, 39, 39);
+    color: black;
    
 }
 .input-container2 button{
@@ -121,9 +122,12 @@ form input[type="password"]:focus{ /*-------efeito de tirar linha ao clicar-----
 }
 form input[type="text"] {
     /*-------praquandoeumudarotipodasenha---------*//*-------**botãodoolho**----------*/width: 25vw;
+    width: 21.5vw;
     height: 50px;
     border: 1px solid #ccc;
-    border-radius:10px;
+    border-radius:10px 0px 0px 0px;
+    color: black;
+   
     
 }
 form input[type="text"]:focus{ /*-------efeito de tirar linha ao clicar----------*/
@@ -136,6 +140,7 @@ form input[type="text"]:focus{ /*-------efeito de tirar linha ao clicar---------
     font-weight: 700;
     background-color:green;
     border-radius:10px;
+    cursor: pointer;
 }
 .input-container input[type="email"]{ 
     /*---------espaço no placeholder-----------*/
@@ -145,9 +150,13 @@ form input[type="text"]:focus{ /*-------efeito de tirar linha ao clicar---------
     /*---------espaço no placeholder-----------*/
     padding-left:45px;
 }
+.input-container2 input[type="text"]{ 
+    /*---------espaço no placeholder-----------*/
+    padding-left:45px;
+}
 .input-container i{ /*---------------icone do input email--------------*/
     position:absolute;
-   
+    cursor: pointer;
     padding: 9px 8px;
     font-size: 25px;
     color:rgba(0, 0, 0, 0.54);
@@ -156,7 +165,7 @@ form input[type="text"]:focus{ /*-------efeito de tirar linha ao clicar---------
 }
 .input-container2 i{/*----------------icone do input senha--------------*/
     position:absolute;
-   
+    cursor: pointer;
     padding: 9px 8px;
     font-size: 25px;
     color:rgba(0, 0, 0, 0.54);
