@@ -1,0 +1,304 @@
+/*----------imports----------*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+:root {
+    --dark-blue: #363f5f;
+    --green: #49AA26;
+    --light-green: #3dd705;
+    --red: #e92929;
+    --white: #fff;
+
+}
+
+*,html{ /*--------atributo global----------*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font: 14px Roboto, sans-serif;
+}
+body{ /*-----------body full--------*/
+    background:url(./img/fundo.png);
+    width:100vw;
+    height:100vh;
+    background-size: cover;
+    
+}
+.container{  /*--------caixa suprema------*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+.esquerda{ /*--------caixa da esquerda-------*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50vw;
+    height:100vh;
+
+}
+.direita{ /*-----caixa da direita-------*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50vw;
+    height:100vh;
+    
+
+}
+
+.caixaP{ /*--------caixa do texto da esquerda---------*/
+    display: flex;
+    font-size: 51px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+p{ /*-------------texto da esquerda----------- */
+    font-size: 51px;
+    font-weight: 400;
+    width: 30vw;
+    color: rgb(255, 255, 255);
+    border-left: 10px solid rgb(70, 183, 52);
+    
+}
+
+.formm img{ /*----------logo------------ */
+    width: 238.69px;
+    align-items: center;
+    
+    
+}
+h2{ /*---------titulo do form---------------*/
+    line-height: 36.09px;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 400px;
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+}
+form input[type="email"]{ /* ------- input do email--------*/
+    width: 25vw;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius:10px;
+}
+form input[type="email"]:focus{ /*-------efeito de tirar linha ao clicar----------*/
+    outline: none;
+}
+form input[type="password"] {
+    /*--------imputdasenha--------*/
+    width: 21.5vw;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius:10px 0px 0px 0px;
+    color: rgb(41, 39, 39);
+   
+}
+.input-container2 button{
+    /*------botaodoolhoposicionado--------*/
+    position:absolute;
+    padding: 9px 8px;
+    width: 3.5vw;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    color:rgba(0, 0, 0, 0.54);
+    background: white;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
+form input[type="password"]:focus{ /*-------efeito de tirar linha ao clicar----------*/
+    outline: none;
+}
+form input[type="text"] {
+    /*-------praquandoeumudarotipodasenha---------*//*-------**botãodoolho**----------*/width: 25vw;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius:10px;
+    
+}
+form input[type="text"]:focus{ /*-------efeito de tirar linha ao clicar----------*/
+    outline: none;
+}
+#submit{
+    /*-----------botao------------*/width: 25vw;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 700;
+    background-color:green;
+    border-radius:10px;
+}
+.input-container input[type="email"]{ 
+    /*---------espaço no placeholder-----------*/
+    padding-left:45px;
+}
+.input-container2 input[type="password"]{ 
+    /*---------espaço no placeholder-----------*/
+    padding-left:45px;
+}
+.input-container i{ /*---------------icone do input email--------------*/
+    position:absolute;
+   
+    padding: 9px 8px;
+    font-size: 25px;
+    color:rgba(0, 0, 0, 0.54);
+    background: none;
+
+}
+.input-container2 i{/*----------------icone do input senha--------------*/
+    position:absolute;
+   
+    padding: 9px 8px;
+    font-size: 25px;
+    color:rgba(0, 0, 0, 0.54);
+    background: none;
+        
+}
+
+a{ /*---------esqueci a senha----------*/
+    display: block;
+    color:#ffff;
+    background-color:none;
+    font-family: Roboto, Helvetica, " sans-serif";
+    font-size: 18px;
+    text-decoration:none;
+    font-weight: bold;
+    text-align: center;
+}
+.button.cancel {
+    color: #6A6A6A;
+    border: 2px solid;
+    border-color:white;
+    font-size: 20px;
+    border-radius:2px;
+    height: 35px;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(251, 250, 250);
+    font-weight:100;
+    
+}
+.button.salvar{
+    color: var(--white);
+    font-weight:300;
+    border-radius:1px;
+    height: 35px;
+    font-size: 20px;
+    font-weight:100;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px var(--green) solid;
+    opacity: 0.6;
+   padding: 10px;
+   background: var(--green);
+   cursor: pointer;
+}
+
+.button.cancel:hover {
+    opacity: 1;
+}
+.button.salvar:hover {
+    opacity: 1;
+}
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+font-family: Roboto, Helvetica, " sans-serif";
+    background-color: rgba(26, 25, 25, 0.445);
+    background-color: rgba(26, 25, 25, 0.445);
+
+    position: fixed;
+    top: 0;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #F0F2f5;
+    padding: 2.4rem;
+    width: 540px;
+    height:193px;
+    position: relative;
+    z-index: 1;
+    font-family: Roboto, Helvetica, " sans-serif";
+    font-weight: bold;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+    width: 128px;
+    height: 35px;
+    font-weight: bold;
+}
+.modal-overlay h2{
+    font-family: Roboto, Helvetica, " sans-serif";
+    color: rgb(106, 106, 106);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+.modal-overlay  form input[type="email"]{
+   border: rgb(233, 220, 220)FFF;
+    width: 477px;
+    background: white;
+    height: 51px;
+   
+
+
+}
+.modal-overlay  form input[type="email"]:focus{
+    outline: none;
+}
+.modal-overlay  form input[type="email"]::-webkit-input-placeholder{
+    color:#4C4;
+    background-color: white;
+    font-family: Roboto, Helvetica, " sans-serif";
+    font-style: bold;
+    font-weight: bold;
+}
+.modal-overlay  form input[type="email"]::-moz-placeholder{
+    color:#4C4;
+    background-color: white;
+    font-family: Roboto, Helvetica, " sans-serif";
+    font-style: bold;
+    font-weight: bold;
+}
+.modal-overlay  form input[type="email"]:hover{
+    border: none;
+    box-decoration-break: none;
+}
